@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .newHeader{
+        background-color: #940c00;
+
+    }
+    .newHeader input {
+        background-color: white;
+    }
+    
+  
+       
+   
+        .footer {
+            background-color: #940c00 ;
+            height: 150px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            margin-top: 20px;
+        }
+        .footerList {
+            list-style-type: none;
+        }
+        .footerList a {
+            text-decoration: none;
+            color: #cccccc;
+            font-size: 18px;
+        }
+        
+        .footerList li {
+            margin-top: 10px;
+        }
+        .footerList a:hover {
+            color: white;
+        }
+        .mobileIcon {
+            display: none;
+        }
+       
+  
+
+      
+   
+       
+        @media only screen and (max-width: 600px) {
+       
+            /* Mobilde footer kısmının tasarımı değişmesi için ek olarak yazıldı. */
+
+            .footer {
+                height: auto;
+                flex-direction: column;
+            }
+            .footerList  {
+                display: flex;
+                padding: 0px;
+            }
+            .footerList li {
+                padding-right: 10px;
+            }
+            .headerImg  {
+                display: none;
+                
+           } 
+           .mobileIcon {
+            display: block;
+           
+           }
+            .mobileLink{
+            
+             display: flex;
+             flex-direction: column;
+            
+            }
+     
+        
+        .mobileLinkDiv {
+            display: none;
+        }
+     
+
+
+    }
+  
+  
+    </style>
+</head>
+<body>
+
+    <header class="p-3 newHeader">
+        <div class="mobileIcon" onclick="toggle()">
+            <img  class="le" src="icon.png" alt="" height="50px">
+        </div>
+        <div  class="container-fluid">
+            <div  id="navDiv" class="mobileLinkDiv " >
+
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <div class=" d-flex justify-content-start">
+                <a href="index.html">
+                    <img class="headerImg" src="burgerlogo.png" alt="" height="50px">
+                </a>
+                
+              
+            </div>
+           
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-white">Şubelerimiz</a></li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link px-2 text-white dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Hakkımızda</a>
+                <ul class="dropdown-menu bg-light ">
+                  <li><a class="dropdown-item" href="hakkımızda.html">Hakkımızda</a></li>
+                  <li><a class="dropdown-item" href="#">Franchising Başvurusu</a></li>
+                  <li><a class="dropdown-item" href="#">Helal Sertifikamız</a></li>
+                  <li><a class="dropdown-item" href="#">Helal Sertifikamız</a></li>
+
+                </ul>
+              </li>
+              
+
+              <li><a href="ürünler.html" class="nav-link px-2 text-white">Ürünler</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">İletişim</a></li>
+             
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark " placeholder="İsteğinizi bulalım..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Ara</button>
+            </div>
+              <button type="button" class="btn btn-warning"><b>ONLİNE SİPARİŞ </b></button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    
+   <div class="container">
+
+        <img style="width: 100%;" src="https://www.burgeryiyelim.com/templates/website/tema-1/assets/images/hakkimizda101.jpg" alt="">
+        <h1>Burger Yiyelim</h1>
+    <p>
+        Keban Et 1976 yılında Keban Kasap olarak kuruldu. Butik bir kasap olmasına rağmen müşterilerine sunmuş olduğu ürünlerin katkısız ve lezzetli olmasından dolayı kısa sürede 'Et Ustası' ünvanının aldı. 41 yıldır iş hacmi, ürün yelpazesi, müşteriler, çalışanlar kısacası bir çok şey değişti. Ancak değişmeyen tek şey Keban Et'in sunduğu et ve et ürünlerinin lezzeti idi. <br><br>
+
+Keban Kasap müşterilerinden aldığı talepler ile kalitesini hiç bozmadan büyüyebilen nadir et üreticilerindendir. İlerleyen yıllarda gücünü müşterilerinin sadakat ve övgülerinden alarak üretim bandını genişletti.<br><br>
+
+İstanbul'un en köklü kasapları arasında yer alan Keban Kasap şu anda üretimine 1500m2 kapalı alana sahip Keban Et Entegre tesislerinde devam etmekte.<br><br>
+
+Yakın zamana kadar sadece pişirmeye hazır et ürünleri üretmesine rağmen 'Et Ustası' ünvanına yakışır bir şekilde tüketime hazır, pişirilmiş et ürünleri üretmeye başladı. Halkımızın gerçek et, katkısız lezzeti tatması için Et Yiyelim markasını oluşturdu. Bu marka çok kısa sürede halkın beğenisini kazandı. Et Yiyelim lokantalarında, kendine has lezzetleri içerisinde barındıran ürünleri ile müşterilerin vazgeçilmezi arasında yer aldı.<br><br>
+
+Keban Et her zaman samimi aile kasabı çizgisinin yanında, modern gelişimlere de önem veren bir firma olmuştur. Bu kimliğiyle 2016 yılında yerli burger projesi ile Burger Yiyelim markasını oluşturdu. Burger Yiyelim'in farkı %100 katkısız %100 dana etinden yapılan burgerleri oldu.
+    </p>
+
+    <h6>NEDEN UYGUN FİYAT?</h6>
+    <p>Burger Yiyelim'in nefis köfteleri Keban Et 'in hijyenik ve son teknoloji üretim tesislerinde üretilip oradan damaklarınıza kadar ulaşmakta. Köftelerimizi ana markamız olan Keban Entegre Et Tesisleri'nde hazırladığımız için sizlere daha uygun fiyata daha kaliteli burgerler sunabiliyoruz.</p>
+    <br>
+    <h6>KÖFTELERİNİZ HELAL Mİ?</h6>
+    <p>Köftelerimiz TSE Helal belgelidir.</p>
+
+
+
+
+   </div>
+    <div class="footer">
+        <ul class="footerList">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="">Hakkımızda</a></li>
+            <li><a href="">İletişim</a></li>
+        </ul>
+        <img id="yukari" src="burgerlogo.png" height="80px" alt="">
+        <ul class="footerList">
+            <li><a href="">Burgerler</a></li>
+            <li><a href="">Restoranlar</a></li>
+            <li><a href="">Kariyer</a></li>
+        </ul>
+    </div>
+
+
+
+    <script src="project.js">
+
+
+    </script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
